@@ -1,0 +1,129 @@
+<mat-sidenav-container>
+  <mat-sidenav [(opened)] = "opened" mode="push" >
+    <div style="margin: 30px">
+      <div class ="mat-display-2">Votre banque digital à votre service </div>
+      <div class ="display-6">A propos de nous </div>
+      <p class="justify-content-md-end">Nous sommes avotre disposition 24h / Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.24h </p>
+      <div class="bo">
+        <span class="mat-display-5"> Contactez nous</span>
+        <button mat-fab style="margin: 10px;">
+          <mat-icon>ring_volume</mat-icon>
+        </button>
+
+      </div>
+
+
+
+      <!--<button mat-raised-button color="primary" >
+        <mat-icon>payments</mat-icon>
+      </button>-->
+      <!--  <div class="marg">
+          <span matBadge="5" matBadgePosition="below after">Notification</span>
+        </div>
+        <div class="marg">
+          <span matBadge="5" matBadgeSize="large" matBadgeColor="accent" matBadgePosition="above before">Notification</span>
+        </div>
+        <div class="marg">
+          <span [matBadge]="notific"  [matBadgeHidden]="notific === 0" matBadgePosition="above after" matBadgeColor="warn">Notification</span>
+        </div>-->
+
+    </div>
+
+    <!--<div>
+      <span class="mat-display-2"  color = "primary"> Spinner</span>
+      <mat-progress-spinner value="40" color="warn"></mat-progress-spinner>
+      <mat-spinner *ngIf="showSpinner" color="warn"> </mat-spinner>
+      <button (click)="loadData()" mat-fab color="accent" >Load Data </button>
+      &lt;!&ndash; <button mat-icon-button>payments </button>
+       <button mat-card-image > img</button>&ndash;&gt;
+    </div>-->
+
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"  >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" (click)="opened=!opened">DigiBank</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/accounts">Comptes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/customers">Rechercher un client</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/new-customer">Ajouter un client</a>
+            </li>
+
+            <!--<li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                Clients
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" routerLink="/customers">Rechercher un client</a></li>
+                <li><a class="dropdown-item" routerLink="/new-customer">Ajouter un client</a></li>
+              </ul>
+            </li>-->
+
+
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+    <router-outlet>
+
+    </router-outlet>
+
+
+    <div style="margin: 100px">
+
+
+
+      <mat-list>
+      <mat-list-item>
+        <mat-icon color="warn" matListIcon>home</mat-icon>
+        <h3 matLine>Lorem ipsum dolor sit amet</h3>
+        <p matLine>consectetur adipiscing elit, sed do eiusquat anim id est laborum. </p>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon color="primary" matListIcon>phone</mat-icon>
+        <h3 matLine>Lorem ipsum dolor sit amet</h3>
+        <p matLine>consectetur adipiscing elit, sed do eiusquat anim id est laborum. </p>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon color="accent" matListIcon>money</mat-icon>
+        <h3 matLine>Lorem ipsum dolor sit amet</h3>
+        <p matLine>consectetur adipiscing elit, sed do eiusquat anim id est laborum. </p>
+      </mat-list-item>
+
+
+
+
+    </mat-list>
+
+    </div>
+
+
+
+
+
+    <!-- <button mat-fab color="primary" ><mat-icon color="warn">recent_actors</mat-icon></button>
+
+ -->
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
+

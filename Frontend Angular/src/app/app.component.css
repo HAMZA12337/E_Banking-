@@ -1,0 +1,28 @@
+mat-sidenav-container{
+
+  height:  100%;
+}
+
+mat-sidenav, mat-sidenav-content{
+  padding: 16px;
+}
+
+mat-sidenav{
+  background-color: linen;
+  width: 400px;
+}
+button{
+  margin-right: 2rem;
+}
+
+
+.marg{
+  margin-right: 5rem;
+
+}
+.bo{
+  border-bottom: solid 1px darkslateblue;
+  border-top: solid 1px palevioletred;
+  margin: 5px;
+  padding: 1rem;
+}
